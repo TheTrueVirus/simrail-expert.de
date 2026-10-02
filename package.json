@@ -1,6 +1,8 @@
 {
   "name": "simrail-expert.de",
   "version": "0.5.0",
+  "author": "TrueVirus",
+  "license": "UNLICENSED",
   "private": true,
   "homepage": "https://simrail-expert.de",
   "dependencies": {

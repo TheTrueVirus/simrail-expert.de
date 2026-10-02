@@ -6,6 +6,78 @@
 > ### **This project is still under full development. You may encounter bugs!**
 > #### _If you encounter any bugs or have any suggestions for improvements, let me now by writing a post into the forum thread or by opening an issue in the github repository. This will help me a lot!_
 
+## **Version 0.5.0 | MAJOR UPDATE**
+Released on 02.10.2026
+#### Overview: A new hub for small tools like SRTO: SimRail-Expert
+With this version, the SRTO is no longer available on *GitHub Pages*. It now runs on its own platform, which gives me more control over the website and its content.
+The SRTO is also part of, and the beginning of, a future idea: the newly founded domain **SimRail-Expert**.
+
+### 🌐 What is *SimRail-Expert*?
+**SimRail-Expert** is planned to become a small hub for tools like the SRTO, plus a few other small additions, for example a "*Signals Guide*".
+These additions and planned tools are still in development, so the SRTO is the only available tool for now. But stay tuned for what's to come!
+
+### 🔌 SimRail-Expert's own API
+The new hosting also makes it possible to run a self-hosted API endpoint, which provides the SRTO and future tools with additional information.
+> [!WARNING]
+> The API endpoint is only allowed to be used by tools hosted at simrail-expert.de
+> External usage from other websites is forbidden!
+
+### <u>Major Changes</u>
+
+#### 🚆 Timetable Delta Time
+- New Feature: **Timetable Delta Time** is now visible right on the train
+- Due to this new feature, all existing map elements had to be remade to better align with the now "longer" trains
+- With that, the previous two screens have now been split into four screens:
+  - **S1:** Katowice <-> Włoszczowa Północ
+  - **S2:** Włoszczowa Północ <-> Warszawa
+  - **S3:** Sędzice <-> Łódź North / Gałkówek *(not completely finished yet)*
+  - **S4:** Rozprza <-> Pruszków
+
+#### 🖥️ UI Rework
+- The UI has finally been reworked to its full potential
+  - The currently selected screen is now visible in the header, with the clock aligned to the right
+  - The selection of **Screens** and **Servers** is still in panels, but now aligned to the right underneath the button itself
+    - The screen list now shows the start and end of the screen, as well as a brief overview of the route the screen covers
+    - Available servers are now categorized into "*Polski*", "*German*", "*International*", and "*Additional Server*"
+    - Each server now also shows the current number of players in trains and stations, as well as the overall player usage on the server in percent
+
+#### 🤓 Some nerdy information
+A lot of performance changes have been made in the background.
+- Tracks are now custom commands parsed into Canvas `Path2D`
+- Annotations are now bundled into one element instead of several elements in one list
+- This saves a lot of lines in the data files
+- The data files are also "chunked" out to reduce the overall size of the main script file
+
+### <u>Additional Changes</u>
+
+#### **All screens now have a different look due to the new, larger track layout**
+
+#### 1️⃣ Screen 1 — Katowice <-> Włoszczowa Północ
+- Added a short section of **LK138** towards Szabelnia / Mysłowice
+- Tracks between **DG** and **DZA** are now "shifted" to better represent the placement of signals and platforms as they are in the game
+
+#### 2️⃣ Screen 2 — Włoszczowa Północ <-> Warszawa
+- Added station "*Żyrardów*" to the screen
+- Reworked station "*Grodzisk Mazowiecki*"
+- Reworked station "*Pruszków*"
+#### 3️⃣ Screen 3 — Sędzice <-> Gałkówek
+- The **Łódź North** region has been added to this screen. It's positioned below the rest of the screen.
+  - The additional track between **Kutno** and **Łowicz Główny** will be added in a later update
+- Reworked the APO "*Męka*"
+- Reworked the APO "*Kolumna*" and "*Dobroń*"
+- Reworked "*Łódź Kaliska*"
+- Reworked "*Łódź Widzew*"
+
+#### 4️⃣ Screen 4 — Rozprza <-> Pruszków
+- **Rozprza** and **Piotrków Trybunalski** are now next to each other
+- **Koluszki** and **Skierniewice** have been re-created from the ground up. Some differences are still there, but they are not very noticeable
+- **Grodzisk Mazowiecki** and **Pruszków** have been added to the screen
+
+### <u>Bugs Fixed</u>
+
+### <u>Roadmap</u>
+All future plans are tracked on the <a href='https://trello.com/b/GOW2Mzpf/simrail-expertde'>SRTO Trello Board</a>.
+
 ## **Version 0.4.0-alpha | MAJOR UPDATE**
 Released on 23.07.2026
 #### Overview: Pre-Finished Screen "Łódź Voivodeship", Player Names and more!
@@ -33,7 +105,7 @@ Upcoming updates will bring significant reworks to tracks on the first and secon
 
 A dedicated **train information window** is also planned: clicking a train will open a movable popup with full details, including the signal view, that persists while you continue using the map.
 
-All future plans are tracked on the <a href='https://trello.com/b/GOW2Mzpf/simrail-track-overview'>SRTO Trello Board</a>.
+All future plans are tracked on the <a href='https://trello.com/b/GOW2Mzpf/simrail-expertde'>SRTO Trello Board</a>.
 
 ## **Version 0.3.2-alpha | Small fixes**
 Released on 25.05.2026
