@@ -1,0 +1,85 @@
+.panel {
+    right: 154px;
+}
+
+.screenList {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    justify-content: center;
+}
+
+.screenOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    border-left: 2px solid transparent;
+}
+
+.screenOption.soonOption {
+    /* filter: opacity(0.7); */
+    opacity: 0.4;
+    user-select: none;
+}
+
+.screenOption.soonOption:hover {
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+.active {
+    border-left: 2px solid var(--text-contrast-heavy);
+    /* background-color: var(--bg-alt); */
+    background: linear-gradient(90deg, var(--text-contrast-heavy-dim) 1%, transparent 35%);
+}
+
+.screenOption:hover {
+    background-color: var(--bg-hover);
+    cursor: pointer;
+}
+
+.screenBadge {
+    /* background-color: rgb(50, 33, 9); */
+    color: var(--text-contrast-heavy);
+    /* border: 1px solid var(--amber); */
+    border-radius: 6px;
+    padding: 4px 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.screenTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-alt);
+}
+
+.screenTitle span {
+    color: var(--text-alt2);
+    font-size: 12px;
+}
+.screenTitle strong {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.screenTitle strong span svg {
+    width: 11px;
+    height: 11px;
+}
+.screenTitle strong span {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 5px;
+    font-size: 10px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--text-contrast-heavy);
+}

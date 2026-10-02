@@ -1,0 +1,7 @@
+.container {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'IBM Plex Sans';
+}

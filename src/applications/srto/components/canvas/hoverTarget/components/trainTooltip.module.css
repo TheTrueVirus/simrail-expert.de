@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* padding: 4px 10px; */
+    padding-right: 0px;
+    font-size: 14px;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 4px 10px;
+    border-right: 1px solid rgb(50, 50, 50);
+}
+.title {
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--text-contrast)
+}
+.driver {
+    color: rgb(0, 150, 255);
+    font-weight: 600;
+}
+.routeContainer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(50, 50, 50);
+    border-bottom: 1px solid rgb(50, 50, 50);
+    padding: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.routeTitle {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.signal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    background-color: black;
+    box-sizing: content-box;
+}

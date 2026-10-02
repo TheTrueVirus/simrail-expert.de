@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/site-logo/se.ico" />
+    <meta name="theme-color" content="#000000" />
+    <title>401 UNAUTHORIZED</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial;
+            background:
+                linear-gradient(to bottom, #171717, #400b0b);
+            overflow: hidden;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        .black {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            opacity: 1;
+            pointer-events: none;
+            user-select: none;
+            animation: removeblack 2s ease forwards 200ms;
+            z-index: 999;
+        }
+
+        @keyframes removeblack {
+            0% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        .shell {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero {
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+        }
+
+        .heroHTML {
+            font-size: clamp(2.5rem, 12vw, 6rem);
+            color: rgba(125, 125, 125, 0.8);
+        }
+
+        .heroHTMLText {
+            font-size: clamp(3rem, 15vw, 7.5rem);
+            color: red;
+            font-weight: 900;
+        }
+
+        .content {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            gap: 14px;
+            align-items: center;
+            color: rgb(160, 160, 160);
+        }
+
+        .content h2 {
+            width: 100vw;
+            text-align: center;
+            font-size: clamp(0.9rem, 2.5vw, 2rem);
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="shell">
+        <div class="black"></div>
+        
+        <section class="hero">
+            <h1 class="heroHTML">401</h1>
+            <h1 class="heroHTMLText">UNAUTHORIZED</h1>
+        </section>
+        <section class="content">
+            <h2>Zugriff verweigert!</h2>
+            <h2>Access denied!</h2>
+            <h2>Accès refusé!</h2>
+            <h2>Odmowa dostępu!</h2>
+        </section>
+        <section class="footer">
+            <h4>simrail-expert.de</h4>
+        </section>
+    </main>
+</body>
+
+</html>

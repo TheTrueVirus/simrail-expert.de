@@ -1,12 +1,35 @@
-Copyright (c) 2026 TheTrueVirus
-All rights reserved.
+Source-Available License (All Rights Reserved)
 
-This project and all associated source code, assets, documentation, and files are proprietary.
+Copyright (c) 2026 TrueVirus
 
-No permission is granted to any person or organization to use, copy, reproduce, modify, merge,
-publish, distribute, sublicense, sell, or otherwise exploit this project, in whole or in part,
-without prior written permission from the copyright holder.
+This repository and its contents (source code, assets, documentation,
+and any other files) are made publicly available for viewing purposes
+only, in the interest of transparency.
 
-Any unauthorized use, copying, or distribution is strictly prohibited.
+Except where explicitly stated otherwise, no rights are granted to any
+person to use, copy, modify, merge, publish, distribute, sublicense,
+host, deploy, or create derivative works of this software or any part
+of it, for any purpose, commercial or non-commercial.
 
-To request permission, contact the copyright holder.
+Permitted without prior permission:
+  - Viewing and reading the source code
+  - Cloning the repository for the sole purpose of local, private
+    inspection (not for running, deploying, or building upon it)
+
+Requires explicit prior written permission from the copyright holder:
+  - Using this software or any part of it in your own project
+  - Copying, modifying, or creating derivative works
+  - Redistributing this software, modified or unmodified
+  - Deploying or hosting this software or a derivative of it
+  - Any commercial use
+
+To request permission, please open an issue or contact me
+via the SimRail-Expert community Discord server.
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

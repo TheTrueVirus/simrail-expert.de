@@ -1,11 +1,11 @@
 {
-  "short_name": "SimRail Track Overview",
-  "name": "SimRail Track Overview",
+  "short_name": "SimRail-Expert",
+  "name": "SimRail-Expert",
   "icons": [
     {
-      "src": "ssp.svg",
-      "type": "image/svg",
-      "sizes": "100x100"
+      "src": "favicon.ico",
+      "type": "image/ico",
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",

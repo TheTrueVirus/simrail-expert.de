@@ -1,0 +1,248 @@
+.landingBackdrop {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.72), transparent 90%);
+}
+
+.landingHeroPanel,
+.landingProjects {
+    position: relative;
+    z-index: 1;
+    width: min(1180px, 100%);
+    margin: 0 auto;
+}
+
+.landingHeroPanel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.95fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+.landingHeroCopy,
+.landingStatusPanel,
+.landingProjectCard {
+    border: 1px solid var(--landing-border);
+    background: var(--landing-panel);
+    box-shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(14px);
+}
+
+.landingHeroCopy {
+    padding: 34px;
+    border-radius: 30px;
+}
+
+.landingEyebrow {
+    margin: 0 0 14px;
+    color: var(--landing-accent-soft);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+}
+
+.landingTitle {
+    margin: 0;
+    max-width: 10ch;
+    font-size: clamp(3rem, 7vw, 6.2rem);
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    text-wrap: balance;
+}
+
+.landingSubtitle {
+    max-width: 58ch;
+    margin: 22px 0 0;
+    color: var(--landing-muted);
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.75;
+}
+
+.landingActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.landingButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 176px;
+    padding: 14px 22px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.landingButton:hover {
+    transform: translateY(-2px);
+}
+
+.landingButtonPrimary {
+    color: #0a0b0f;
+    background: linear-gradient(135deg, #ffb36b 0%, #ff6b2c 100%);
+    box-shadow: 0 18px 40px rgba(255, 107, 44, 0.22);
+}
+
+.landingButtonSecondary {
+    color: var(--landing-text);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.landingStatusPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px;
+    border-radius: 26px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 30%),
+        var(--landing-panel-strong);
+}
+
+.landingStatusLabel,
+.landingCardLabel {
+    display: inline-flex;
+    width: fit-content;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--landing-accent-soft);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.landingStatusPanel h2,
+.landingProjectCard h2 {
+    margin: 18px 0 6px;
+    font-size: 1.8rem;
+}
+
+.landingStatusPanel p,
+.landingProjectCard p,
+.landingProjectCard h3 {
+    margin: 0;
+    color: var(--landing-muted);
+    line-height: 1.7;
+}
+
+.landingProjectCard h3 {
+    margin-bottom: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.landingStatusMeta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 26px;
+}
+
+.landingStatusMeta div {
+    padding: 16px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.landingStatusMeta strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--landing-text);
+    font-size: 1.9rem;
+}
+
+.landingStatusMeta span {
+    color: var(--landing-muted);
+    font-size: 0.95rem;
+}
+
+.landingProjects {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.landingProjectCard {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    padding: 24px;
+    border-radius: 24px;
+}
+
+.landingProjectCardActive {
+    background:
+        linear-gradient(180deg, rgba(255, 107, 44, 0.12), transparent 42%),
+        var(--landing-panel-strong);
+}
+
+.landingProjectCardMuted {
+    background:
+        linear-gradient(180deg, rgba(110, 126, 255, 0.12), transparent 42%),
+        var(--landing-panel);
+}
+
+.landingCardLink {
+    margin-top: auto;
+    padding-top: 22px;
+    color: #ffc18f;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.landingCardLink:hover {
+    color: #ffd5b6;
+}
+
+@media (max-width: 1080px) {
+    .landingProjects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .landingHeroPanel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .landingPage {
+        padding: 20px 16px 40px;
+    }
+
+    .landingHeroCopy,
+    .landingStatusPanel,
+    .landingProjectCard {
+        border-radius: 22px;
+    }
+
+    .landingHeroCopy,
+    .landingStatusPanel,
+    .landingProjectCard {
+        padding: 22px;
+    }
+
+    .landingProjects,
+    .landingStatusMeta {
+        grid-template-columns: 1fr;
+    }
+
+    .landingButton {
+        width: 100%;
+    }
+}
