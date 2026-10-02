@@ -1,0 +1,75 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex: 1;
+    gap: 26px;
+    z-index: 900;
+    user-select: none;
+    border-bottom: 2px solid var(--border);
+    background-color: var(--bg-alt);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+
+}
+
+.brand img {
+    width: 32px;
+    height: 32px;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 36px;
+    user-select: none;
+}
+
+.content p {
+    font-size: 24px;
+    /* text-align: center; */
+    white-space: pre-line;
+    padding: 12px 0;
+    margin: 0;
+}
+.content p code {
+    background-color: var(--bg-hover);
+    padding: 0 6px;
+    border-radius: 4px;
+}
+.content p strong {
+    color: var(--text-contrast-heavy)
+}
+.content p ul {
+    text-align: left;
+}
+
+.interact {
+    user-select: text;
+}

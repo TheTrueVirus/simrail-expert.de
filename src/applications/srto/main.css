@@ -1,0 +1,28 @@
+.srtoContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: monospace;
+    overflow: hidden;
+}
+
+
+.averageSpeedInformation {
+    position: absolute;
+    top: 80px;
+    z-index: 90;
+    left: 10px;
+    padding: 6px 10px;
+    background-color: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+}
+.averageSpeedInformation span {
+    color: red;
+}

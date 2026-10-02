@@ -1,15 +1,14 @@
 {
-  "name": "simrail-tools-html",
-  "version": "0.5.0-alpha",
+  "name": "simrail-expert.de",
+  "version": "0.5.0",
   "private": true,
-  "homepage": "https://thetruevirus.github.io/simrail-tools-html",
+  "homepage": "https://simrail-expert.de",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "react": "^19.2.4",
@@ -21,13 +20,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set REACT_APP_VERSION=%npm_package_version%&& react-scripts start",
+    "start": "set REACT_APP_VERSION=%npm_package_version% && set HOST=0.0.0.0&& react-scripts start",
     "build": "react-scripts build",
-    "build:versioned": "node scripts/build-versioned.js",
+    "build:versioned:public": "node scripts/deploy_react_app/build-versioned.js public",
+    "build:versioned:beta": "node scripts/deploy_react_app/build-versioned.js beta",
     "serve:local": "node srto_testing_webserver/server.js",
     "start:local": "npm run build:versioned && npm run serve:local",
-    "shift:coords": "node scripts/coordinate-shifter/shift-coordinates.js",
+    "shift:coords": "tsx scripts/coordinate-shifter/shift-coordinates.ts",
+    "convert:trackLabels": "node scripts/data_migration/convert_trackLabels-newFormat.js scripts/data_migration/Input_Output-trackLabels.tsjson",
     "getSignals": "node scripts/simrail-signals/getSimRailSignals.js",
+    "snapshot:test": "ts-node scripts/traindelay_snapshot_tester/snapshot-creator.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -48,5 +50,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "prettier": "^3.9.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.9"
   }
 }

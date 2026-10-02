@@ -2,13 +2,34 @@ html, body, #root {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: black; */
   overflow: hidden;
+
+
+  /* Color Variables */
+  --text-primary: rgb(255, 249, 236);
+  --text-alt: rgb(193, 186, 169);
+  --text-alt2: rgb(152, 145, 134);
+  --text-contrast: rgb(255, 228, 183);
+  --text-contrast-heavy: rgb(255, 205, 119);
+  --text-contrast-heavy-dim: rgba(255, 205, 119, 0.5);
+  --text-muted: rgb(100, 100, 100);
+  --bg-base: rgb(15, 15, 15);
+  --bg-alt: rgb(26, 26, 26);
+  --bg-alt2:rgb(37, 37, 37);
+  --bg-hover: rgb(60, 60, 60);
+  --border: rgb(100, 100, 100);
+  --border-alt: rgb(130, 130, 130);
+  --border-dim: rgb(70, 70, 70);
+  --shadow: rgba(0, 0, 0, 0.25);
+  --green: #4fae72;
+  --green-dim: #254531;
+  --red: #e0665f;
 }
 
 code {

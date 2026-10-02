@@ -1,0 +1,108 @@
+.svg {
+    width: 100%;
+    height: 100%;
+}
+
+.signalLamp {
+    r: 10px;
+    stroke-width: 1;
+    stroke: transparent;
+    transition: 500ms ease;
+}
+
+.lampOff {
+    fill: black;
+}
+
+.redLamp {
+    fill: red;
+}
+
+.orangeLamp {
+    fill: rgb(255, 180, 0);
+}
+
+.greenLamp {
+    fill: lime;
+}
+
+.speedBar {
+    stroke: black;
+    stroke-width: 1;
+}
+
+.offBar {
+    fill: black;
+}
+
+.greenBar {
+    fill: lime;
+}
+
+.orangeBar {
+    fill: orange;
+}
+
+.orangeLamp_Blinking {
+    animation: blinkingSignalLampAnimation_OrangeLamp 2s ease infinite;
+}
+
+.greenLamp_Blinking {
+    animation: blinkingSignalLampAnimation_GreenLamp 2s ease infinite;
+}
+.whiteLamp_Blinking {
+    animation: blinkingSignalLampAnimation_WhiteLamp 1.25s ease-in-out infinite;
+}
+@keyframes blinkingSignalLampAnimation_OrangeLamp {
+    0% {
+        fill: black;
+    }
+
+    25% {
+        fill: orange;
+    }
+
+    75% {
+        fill: orange;
+    }
+
+    100% {
+        fill: black;
+    }
+}
+
+@keyframes blinkingSignalLampAnimation_GreenLamp {
+    0% {
+        fill: black;
+    }
+
+    25% {
+        fill: lime;
+    }
+
+    75% {
+        fill: lime;
+    }
+
+    100% {
+        fill: black;
+    }
+}
+
+@keyframes blinkingSignalLampAnimation_WhiteLamp {
+    0% {
+        fill: black;
+    }
+
+    25% {
+        fill: white;
+    }
+
+    75% {
+        fill: white;
+    }
+
+    100% {
+        fill: black;
+    }
+}

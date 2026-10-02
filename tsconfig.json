@@ -6,7 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "types": [
+      "node"
+    ],
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -18,9 +20,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "allowJs": true
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "src/applications/srto/data/screenData/data-templates.ts",
+    "src/applications/test",
+    "src/applications/ebula",
+    "src/landingpage",
   ]
 }

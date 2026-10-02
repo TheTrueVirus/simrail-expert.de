@@ -1,0 +1,22 @@
+.srtoCanvasContainer {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.srto-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(28, 28, 28); */
+}
+
+.hoverTooltip {
+    position: absolute;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 50;
+}

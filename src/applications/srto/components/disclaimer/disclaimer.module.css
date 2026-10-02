@@ -1,0 +1,58 @@
+.msgShell {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+    font-family: 'IBM Plex Sans';
+    transform: translateX(750px);
+    animation: moveModalIn 250ms forwards 500ms ease-in-out;
+}
+
+@keyframes moveModalIn {
+    0% { transform: translateX(750px) }
+    100% { transform: translateX(0px) }
+}
+
+.msgBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--border);
+    background-color: var(--bg-alt);
+    color: var(--text-alt);
+    max-width: 450px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.msgHero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.msgHero div {
+    font-weight: 600;
+    color: var(--text-contrast-heavy);
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--text-contrast-heavy-dim);
+}
+.msgContent a {
+    color: var(--text-contrast-heavy);
+}
+
+.msgClose {
+    background-color: var(--bg-alt2);
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 4px;
+    color: var(--text-contrast-heavy);
+    transition: 150ms ease;
+}
+.msgClose:hover {
+    background-color: var(--bg-hover);
+    color: var(--red);
+    cursor: pointer;
+}

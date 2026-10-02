@@ -1,0 +1,71 @@
+.container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 38px;
+    width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-alt);
+    border-radius: 6px;
+    font-family: 'IBM Plex Sans';
+    color: var(--text-primary);
+    background-color: var(--bg-alt);
+    box-sizing: content-box;
+    transition: 150ms ease;
+}
+.container.expanded {
+    height: 267px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    background-color: var(--bg-alt2);
+    color: var(--text-contrast-heavy);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border-strong);
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.boxHero {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-hover);
+}
+.boxHero span {
+    width: 7px;
+    height: 7px;
+    background-color: var(--text-contrast-heavy);
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--text-contrast-heavy);
+}
+
+.dataBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 4px 6px;
+    padding-left: 20px;
+}
+.dataBox p {
+    margin: 0;
+    color: var(--text-alt);
+    font-size: 12px;
+}
